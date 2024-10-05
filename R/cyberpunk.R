@@ -23,28 +23,32 @@ cyberpunk <- c(
 #' @importFrom scales manual_pal
 #' @importFrom grDevices colorRampPalette
 
-cpunk_pal <- function(n = NULL, type = c("discrete", "continuous"), reverse = FALSE) {
-  cpunk <- cyberpunk  # Your predefined color palette
+cpunk_pal <- function(n,
+                         type = c("discrete", "continuous"),
+                         reverse = FALSE){
+  cpunk <- cyberpunk
 
-  if (reverse) {
+  if (reverse == TRUE) {
     cpunk <- rev(cpunk)
+  }
+
+  if (missing(n)) {
+    n <- length(cpunk)
   }
 
   type <- match.arg(type)
 
-  if (type == "discrete") {
-    if (is.null(n)) {
-      n <- length(cpunk)
-    }
-
-    if (n > length(cpunk)) {
-      stop(paste0("Palette does not have ", n, " colors, maximum is ", length(cpunk), "!"))
-    }
-
-    return(scales::manual_pal(cpunk[1:n]))
-  } else {
-    return(grDevices::colorRampPalette(cpunk))
+  if (type == "discrete" && n > length(cpunk)) {
+    stop(paste0("Palette does not have ", n, " colors, maximum is ", length(cpunk), "!"))
   }
+
+  cpunk <- switch(type,
+                     continuous = grDevices::colorRampPalette(cpunk)(n),
+                     discrete = cpunk[1:n])
+
+  cpunk <- scales::manual_pal(cpunk)
+
+  return(cpunk)
 }
 
 
