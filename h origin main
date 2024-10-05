@@ -1,0 +1,23 @@
+[33mcommit 796d8766ce66ce9d7572a53d52e13c9c42a11193[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: SodiumMan91 <nb3236@columbia.edu>
+Date:   Sat Oct 5 08:56:55 2024 -0400
+
+    Updated for geom_vline and geom_hline
+
+[33mcommit 9c9f1661b853eb3e17c687cf948955b845397d6f[m
+Author: SodiumMan91 <nb3236@columbia.edu>
+Date:   Sat Oct 5 08:49:42 2024 -0400
+
+    Initial commit
+
+[33mcommit 170d56f021bd0eb0e37738d291d5bf92fb83dd3e[m
+Author: SodiumMan91 <nb3236@columbia.edu>
+Date:   Wed Oct 2 19:42:40 2024 -0400
+
+    Add GitHub links to DESCRIPTION
+
+[33mcommit b03379dabaab3173f711744b7cc8c606c4fd8daa[m
+Author: SodiumMan91 <nb3236@columbia.edu>
+Date:   Wed Oct 2 19:11:19 2024 -0400
+
+    Initial commit
