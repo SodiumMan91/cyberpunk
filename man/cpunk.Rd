@@ -4,7 +4,7 @@
 \alias{cpunk_pal}
 \title{The Cyberpunk palette}
 \usage{
-cpunk_pal(n = NULL, type = c("discrete", "continuous"), reverse = FALSE)
+cpunk_pal(n, type = c("discrete", "continuous"), reverse = FALSE)
 }
 \arguments{
 \item{n}{number of colors}
