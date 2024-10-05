@@ -86,6 +86,7 @@ theme_cpunk <- function(
     ggplot2::update_geom_defaults("polygon", list(color = "#E200F7"))
     ggplot2::update_geom_defaults("path", list(color = "#E200F7"))
     ggplot2::update_geom_defaults("step", list(color = "#E200F7"))
+    ggplot2::update_geom_defaults("abline", list(color = "#E200F7"))
 
     if (ticks == FALSE) {
       cpunk <- cpunk + theme(axis.ticks = element_blank(),
