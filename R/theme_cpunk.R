@@ -59,7 +59,7 @@ theme_cpunk <- function(
         panel.grid.major = element_line(color = "gray30"),
         panel.grid.minor = element_line(color = "gray30"),
         strip.text = elemnt_text(family = title.font, color = title.color, size = title.size, face = "bold"),
-        strip.background = element_rect(fill = "grey20", color = "black")
+        strip.background = element_rect(fill = "grey20", color = "black"),
         plot.title = element_text(family = title.font, color = title.color, size = title.size, face = "bold"),
         plot.subtitle = element_text(color = subtitle.color, size = subtitle.size),
         axis.title = element_text(family = text.font, color = axis.title.color, size = axis.title.size, face = "bold"),
