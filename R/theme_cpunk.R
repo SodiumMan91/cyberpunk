@@ -67,7 +67,8 @@ theme_cpunk <- function(
         legend.background = element_rect(fill = "black"),
         legend.text = element_text(family = legend.font, color = legend.text.color, size = legend.text.size, face = "bold"),
         legend.title = element_text(family = legend.font, color = legend.title.color, size = legend.title.size, face = "bold"),
-        legend.position = legend.position
+        legend.position = legend.position,
+        plot.margin = unit(c(1,1,1,1), "cm")
       )
 
     scale_color_cpunk()
