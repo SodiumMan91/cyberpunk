@@ -75,7 +75,7 @@ theme_cpunk <- function(
     scale_fill_cpunk()
     ggplot2::update_geom_defaults("point", list(color = "#E200F7", stroke = 1))
     ggplot2::update_geom_defaults("line", list(color = "#E200F7"))
-    ggplot2::update_geom_defaults("bar", list(color = "#E200F7"))
+    ggplot2::update_geom_defaults("bar", list(color = "#E200F7", fill = "#E200F7"))
     ggplot2::update_geom_defaults("col", list(color = "#E200F7"))
     ggplot2::update_geom_defaults("density", list(color = "#E200F7"))
     ggplot2::update_geom_defaults("boxplot", list(color = "#E200F7"))
